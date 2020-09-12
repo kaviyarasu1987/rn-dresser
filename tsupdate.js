@@ -1393,7 +1393,7 @@
                 }(t)).architecture ? [2, mt(t)] : "MobileNetV1" === t.architecture ? [2, pt(t)] : [2, null]
             })
         })
-    }, t.blurBodyPart = function(t, e, n, r, o, i, a) {
+    }, t.blurBodyPart = function(t, e, n, r, o, i, a,z) {
         void 0 === r && (r = [0, 1]), void 0 === o && (o = 3), void 0 === i && (i = 3), void 0 === a && (a = !1);
         var s = St(e, o, Et.blurred);
         t.width = s.width, t.height = s.height;
@@ -1418,7 +1418,7 @@
             var f = Q(e),
                 l = f[0],
                 c = f[1];
-            u.drawImage(e, 0, 0, c, l), yt(u, d, "destination-in"), u.restore()
+            u.drawImage(z, 0, 0, c, l), yt(u, d, "destination-in"), u.restore()
         }
     }, t.drawBokehEffect = function(t, e, n, r, o, i) {
         void 0 === r && (r = 3), void 0 === o && (o = 3), void 0 === i && (i = !1);
